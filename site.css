@@ -1,0 +1,53 @@
+.bg-full{
+  background: url(http://headersfortwitter.com/wp-content/uploads/2012/11/football-twitter-header.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: auto;
+  min-height: 643px;  
+}
+.banner {
+ background: url(http://nfasl.spruz.com/gfile/75r4!-!JEHJEG!-!zrzor45!-!LJPKNQQG-JJSJ-HHMR-NNJR-EPLFJOMGLIMD!-!72y1nq/a-nfl_banner.jpg) center center;
+ background-size: contain;
+ height: 118px;
+ width: 100%;
+ border-radius: 10px;
+}
+
+.panel {
+ background-color: transparent !important;
+ margin-top: 10px;
+ border: none;
+ }
+ 
+.panel-heading{
+    background-color: dodgerblue !important;
+    color: antiquewhite !important;
+    width: 100%;
+}
+.panel-body {
+    background-color: transparent;
+}
+
+.player-card {
+   display:inline-block;
+   border: 1px solid black;
+   background-color: dodgerblue;
+   color: antiquewhite;
+   border-radius: 5px;
+   width: 160px;
+   height: 250px;
+   text-align: center;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+.player-card img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.player-card:hover {
+  border: 1px solid aliceblue;
+}
+
+.highlight {
+    border: 1px solid aliceblue;
+}

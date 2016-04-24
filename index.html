@@ -1,24 +1,104 @@
 <html>
-<html>
+
 <head>
     <meta charset="UTF-8">
-    <title>The Object Game</title>
+    <title></title>
     <link rel="stylesheet" href="site.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 </head>
+
 <body>
-    <header>
-        
-    </header>
-    
-    <section>
-        
+
+    <section class='container-fluid'>
+
+        <div class="row bg-full">
+            <div class='col-xs-12 col-md-6'></div>
+            <div class="col=xs-12">
+                <div class="banner" style="border: none">  
+            </div>
+            
+            <div class="col-xs-3">
+                
+            <div class="row">
+                            
+                <div style='margin: 10px 0 0 15px'>                              
+                    <button class="btn btn-info" id='loadbtn' style="width: 96%"> ALL PLAYERS </button>
+                </div>
+                
+                <div style='margin: 15px 0 0 15px'> 
+                  <input type="text" style='width:96%; height: 30px' id='ifind'>
+                  <button class="btn btn-info" id='findbtn' style="width: 96%; margin-top: 15px"> SEARCH </button> 
+                </div>
+                            
+                         </div>
+                
+                <div class="panel panel-default" style="background: #fff !important;">
+                            
+                            <div class="panel-heading" >
+                                <h2 class="panel-title">Add Player</h2>
+                        </div>
+                                                    
+                            <div class="panel-body">
+                                <form class="form" id="player-form">
+
+                                    <div class="form-group">
+                                        <label for="">Full Name</label>
+                                        <input name="fullname" class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Position</label>
+                                        <select name="position" class="form-control">
+                                    <option>Offense</option>
+                                    <option>Defense</option>
+                                    <option>Special teams</option>
+                                 </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Team</label>
+                                        <input name="pro_team" class="form-control" />
+                                    </div>
+                                    <div class="button-group">
+                                        <button type="submit" class="btn btn-success" style="width: 49%">Add Player</button>
+                                        <button type="reset" class="btn btn-danger" style="width: 49%">Reset</button>
+                                   </div>
+
+                                </form>
+                               </div>
+                            </div>
+                            
+                            
+                            
+            </div>
+
+            <div class='col-xs-9'>
+                <div class="panel panel-default" > 
+                    <div class="panel-body">              
+
+                         
+                         <div class="row" style="margin-left: 20px">                         
+                            <div class='player-roster' id="roster"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
-    <footer>
-        
-    </footer>
-    
-     <script type="text/javascript" src="app.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="manualload.js"></script>
+    <script type="text/javascript" src="rosterservice.js"></script>
+    <script type="text/javascript" src="playerservice.js"></script>
+    <script type="text/javascript" src="autoload.js"></script>
+
+ 
+
 </body>
+
 </html>
